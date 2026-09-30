@@ -9,3 +9,4 @@ xtr, xval, ytr, yval = train_test_split(x, d["y_train"], test_size=p["test_size"
 os.makedirs("data/processed", exist_ok=True)
 np.savez_compressed("data/processed/data.npz", x_train=xtr, y_train=ytr,
                     x_val=xval, y_val=yval, x_test=xte, y_test=d["y_test"])
+#Comment for A4                    
